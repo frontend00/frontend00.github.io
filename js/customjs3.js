@@ -31,8 +31,6 @@ var closeSearch = document.getElementById('searchclose');
 closeSearch.addEventListener('click', clearForms, false);
 window.addEventListener('beforeunload', clearForms, false);
 
-
-
 /* ---- autofocus on modal ---- */
 
 $('.modal').on('shown.bs.modal', function() {
@@ -40,31 +38,10 @@ $('.modal').on('shown.bs.modal', function() {
 });	
 
 /* ---- scrolltop ---- */
-
-window.addEventListener("scroll", function(event) {
-  
-   var top = this.scrollY;
-   var backButton = document.getElementsByClassName("backtop")[0];
-   
-   if (top < 500) { backButton.style.opacity = "0";
-  } else {
-      backButton.style.opacity = "0.7";
-  }  
-}, false);
-
-$("#back-to-top").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#navbar").offset().top
-    }, 400);
-});
-
-
 /* ---- toggle ---- */
 
 var theToggle = document.getElementById('toggle');
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
 
 // hasClass
 function hasClass(elem, className) {
