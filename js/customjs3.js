@@ -37,11 +37,12 @@ $('.modal').on('shown.bs.modal', function() {
   $(this).find('[autofocus]').focus();
 });	
 
-/* ---- scrolltop ---- */
 /* ---- toggle ---- */
 
 var theToggle = document.getElementById('toggle');
 
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
 
 // hasClass
 function hasClass(elem, className) {

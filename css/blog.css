@@ -1,11 +1,4 @@
 /* Global */
-
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-	/* entypo */
-	[class^="entypo-"]:before,
-	[class*="entypo-"]:before {
-		font-family: 'entypo', sans-serif; }
-
 body {
 		font-family: 'Open Sans',"Helvetica Neue", Helvetica, Arial, sans-serif; 
 		color: #333;
@@ -809,62 +802,60 @@ blockquote span {
 
 /* social media */
 
-#social-media {
-		font-family: 'entypo', sans-serif; }
-
 #social-media p {
-		margin-bottom: 20px;
 		line-height: 2;
 		font-family: 'Open Sans',"Helvetica Neue", Helvetica, Arial, sans-serif; 
-		font-weight: 300; }
+		font-weight: 300; }		
 
-#social-media i {
-		cursor: pointer;
-		display: inline-block;
-		-moz-transition: all 0.35s ease;
-		-o-transition: all 0.35s ease;
-		-webkit-transition: all 0.35s ease;
-		transition: all 0.35s ease;
-		font: inherit;
-		font-size: inherit;
-		background: transparent; }
+#social-media .wrapper {
+		padding-top: 10px;
+		padding-bottom: 0;
+		text-align: center; }
+		
+#social-media	.social-icons .fa {
+	font-size: 1.5em; }
 
-#social-media:first-child i {
-		color: #999;
-		border: 1px solid #999;
-		border-radius: 50%;
-		padding: 0.6em;
-		position: relative;
-		background: transparent; }
+#social-media .social-icons .fa {
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	border: 1px solid #999;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out; }
 
-#social-media i:first-of-type:hover {
-		background: #3b5998;
-		color: white;
-		border: 0; }
+#social-media .social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+`	background-color: #f5f5f5;
+	color: #999;	}
 
-#social-media i:nth-of-type(2):hover {
-		background: #55acee;
-		color: white;
-		border: 0; }
+#social-media .social-icons .fa:hover, .social-icons .fa:active {
+	border: 1px solid #f5f5f5;
+	color: white; }
 
-#social-media i:nth-of-type(3):hover {
-		background: #dd4b39;
-		color: white;
-		border: 0; }
+#social-media .social-icons .fa-facebook {background-color: transparent;}  
+#social-media .social-icons .fa-google-plus {background-color: transparent;} 
+#social-media .social-icons .fa-pinterest {background-color: transparent;} 
+#social-media .social-icons .fa-twitter {background-color: transparent;} 
 
-#social-media i:nth-of-type(4):hover {
-		background: #cb2027;
-		color: white;
-		border: 0; }
+#social-media .social-icons .fa-facebook:hover {
+		background-color: #3C599F; 
+		border: 1px solid #3C599F;}  
+		
+#social-media .social-icons .fa-google-plus:hover {
+		background-color: #CF3D2E;
+		border: 1px solid #CF3D2E; } 
+		
+#social-media .social-icons .fa-pinterest:hover {
+		background-color:#CC2127;
+		border: 1px solid #CC2127;} 
 
-#social-media:first-child i:not(:first-child) {
-		margin-left: 1em; }
-
-#social-media .round { 
-		width: 46px;
-		height: 46px;
-		font-size: 1.3em; }
-	
+		#social-media .social-icons .fa-twitter:hover {
+	background-color:#32CCFE;
+	border: 1px solid #32CCFE;}
  
 /* Scroll to top button */
 	
