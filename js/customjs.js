@@ -114,7 +114,7 @@ window.addEventListener("scroll", function(event) {
 
   
 $("#back-to-top").click(function() {
-       location.hash = "navbar"
+       window.location.hash = "navbar"
     });
     
 
