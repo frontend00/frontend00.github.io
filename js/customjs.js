@@ -111,13 +111,7 @@ window.addEventListener("scroll", function(event) {
 }, false);
 
 
-if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
 
-    $("#back-to-top").touchstart(function() {
-       window.location.hash = "navbar"
-    });
-    
-} else {
    
    
     $("#back-to-top").click(function() {
@@ -125,7 +119,6 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
-}
 
 /* ---- toggle ---- */
 
