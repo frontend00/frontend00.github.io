@@ -110,16 +110,8 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
-
-
-   
-   
-    $("#back-to-top").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#navbar").offset().top
-        }, 400);
-    });
-
+  
+ 
 /* ---- toggle ---- */
 
 var theToggle = document.getElementById('toggle');
