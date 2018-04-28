@@ -929,6 +929,10 @@ blockquote span {
 
 @media (max-width: 769px) {
 
+.modal {
+		top: 20%; }
+		
+		
 .margin { margin: 20px;}
 
 .hidethis { 
