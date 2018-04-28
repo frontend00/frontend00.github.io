@@ -114,10 +114,7 @@ window.addEventListener("scroll", function(event) {
 if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
 
     $("#back-to-top").click(function() {
-        $("body").animate({
-            scrollTop: $("#navbar").offset().top
-        }, 400);
-    });
+          window.scrollTo(200,100)
     
 } else {
     $("#back-to-top").click(function() {
