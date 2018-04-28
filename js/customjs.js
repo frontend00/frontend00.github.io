@@ -110,8 +110,20 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
-  
- 
+
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
+
+    $("#back-to-top").hide();
+    
+} else {
+    
+    $("#back-to-top").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#navbar").offset().top
+        }, 400);
+    });
+}
+
 /* ---- toggle ---- */
 
 var theToggle = document.getElementById('toggle');
