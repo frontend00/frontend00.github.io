@@ -930,7 +930,7 @@ blockquote span {
 @media (max-width: 769px) {
 
 .modal {
-		top: 20%; }
+		top: 0%; }
 		
 		
 .margin { margin: 20px;}
