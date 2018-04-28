@@ -110,13 +110,22 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
-$("#back-to-top").addClass("androidFix").scrollTop(0).removeClass("androidFix");
 
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
+
+  
 $("#back-to-top").click(function() {
+       location.hash = "navbar"
+    });
+
+    
+} else {
+    $("#back-to-top").click(function() {
         $('html, body').animate({
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
+}
 
 /* ---- toggle ---- */
 
