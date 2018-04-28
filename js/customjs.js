@@ -111,7 +111,7 @@ window.addEventListener("scroll", function(event) {
 }, false);
 
   
-$("#back-to-top").click(function() {
+$("#back-to-top").touchstart(function() {
        window.location.hash = "navbar"
     });
     
