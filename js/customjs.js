@@ -115,7 +115,7 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
             window.scrollTo(0,100) // first value for left offset, second value for top offset
 } else {
     $("#back-to-top").click(function() {
-        $('html, body').animate({
+        $('body').animate({
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
