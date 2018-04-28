@@ -110,16 +110,13 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
+$("#back-to-top").addClass("androidFix").scrollTop(0).removeClass("androidFix");
 
-var attr = (navigator.userAgent.toLowerCase().indexOf('webkit') > 0 ? 'body' : 'html');
-
- 
-    $("#back-to-top").click(function() {
-        $(attr).animate({
+$("#back-to-top").click(function() {
+        $('html, body').animate({
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
-
 
 /* ---- toggle ---- */
 

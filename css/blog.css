@@ -40,6 +40,12 @@ p::selection {
 p::-moz-selection {
 		background:  #ffec85; }
 
+.androidFix {
+    overflow:hidden !important;
+    overflow-y:hidden !important;
+    overflow-x:hidden !important;
+}
+
 
 /* Override Bootstrap's default container. */
 @media (min-width: 1200px) {
