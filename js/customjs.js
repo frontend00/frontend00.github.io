@@ -110,12 +110,20 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
-  
-$("#back-to-top").touchstart(function() {
+
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
+
+    $("#back-to-top").touchstart(function() {
        window.location.hash = "navbar"
     });
     
-
+} else {
+    $("#back-to-top").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#navbar").offset().top
+        }, 400);
+    });
+}
 
 /* ---- toggle ---- */
 

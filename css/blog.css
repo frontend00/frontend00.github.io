@@ -40,12 +40,6 @@ p::selection {
 p::-moz-selection {
 		background:  #ffec85; }
 
-.androidFix {
-    overflow:hidden !important;
-    overflow-y:hidden !important;
-    overflow-x:hidden !important;
-}
-
 
 /* Override Bootstrap's default container. */
 @media (min-width: 1200px) {
@@ -873,8 +867,8 @@ blockquote span {
 .backtop, .backtop:visited, .backtop:link {
 		position: fixed;
 		background-color: black;
-		bottom: 80px;
-		right: 100px;
+		bottom: 30px;
+		right: 40px;
 		line-height: 1;
 		padding: 17px 20px 25px 20px;
 		font-size: 1.5em;
