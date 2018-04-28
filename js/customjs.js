@@ -110,8 +110,6 @@ window.addEventListener("scroll", function(event) {
   }  
 }, false);
 
-
-
   
 $("#back-to-top").click(function() {
        window.location.hash = "navbar"
