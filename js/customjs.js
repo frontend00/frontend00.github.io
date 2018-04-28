@@ -119,10 +119,6 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
     
 } else {
    
-     $("#back-to-top").click(function() {
-      $("#back-to-top2").removeAttr("href");
-    });   
-
    
     $("#back-to-top").click(function() {
         $('html, body').animate({
