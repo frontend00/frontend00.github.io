@@ -209,6 +209,9 @@ input.searchinput {
 		width: 100%;
 		font-weight: 700;
 		background: transparent; }
+		
+input.searchinput:focus {
+    outline: none; }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
