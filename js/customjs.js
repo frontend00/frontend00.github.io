@@ -111,11 +111,17 @@ window.addEventListener("scroll", function(event) {
 }, false);
 
 
-if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {           
-            window.scrollTo(0,100) // first value for left offset, second value for top offset
+if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
+
+    $("#back-to-top").click(function() {
+        $("body").animate({
+            scrollTop: $("#navbar").offset().top
+        }, 400);
+    });
+    
 } else {
     $("#back-to-top").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
