@@ -111,19 +111,15 @@ window.addEventListener("scroll", function(event) {
 }, false);
 
 
-if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {    
+var attr = (navigator.userAgent.toLowerCase().indexOf('webkit') > 0 ? 'body' : 'html');
 
+ 
     $("#back-to-top").click(function() {
-       $(window).scrollTop(100)
-    });
-    
-} else {
-    $("#back-to-top").click(function() {
-        $('html, body').animate({
+        $(attr).animate({
             scrollTop: $("#navbar").offset().top
         }, 400);
     });
-}
+
 
 /* ---- toggle ---- */
 
