@@ -1,16 +1,207 @@
-@@ -31,7 +31,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Architecture">
+  <meta name="author" content="Rinko Tamaguchi">
+  <link rel="icon" href="images/favicon.png">
+  <title>Architecture Blog</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/blog.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+
+ <!-- Static navbar -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+			   <a class="navbar-brand" href="#"><strong>architecture</strong>blog</a>
+				 <a href="#menu"data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="toggle"><span></span></a>
+				<div class="hidethis">		
+					<button type="button" class="btn btn-default search" data-toggle="modal" data-backdrop="static" data-target="#myModal">
+					<span class="glyphicon glyphicon-search"></span>
+				</div>
+      </div>
+			
+			<div class="floatright">
 				<button type="button" class="btn btn-default search" data-toggle="modal" data-backdrop="static" data-target="#myModal">
 				<span class="glyphicon glyphicon-search"></span>
 			</div>
-			
 			<div id="navbar"></div>
 			<div class="floatright">
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-@ -203,6 +203,19 @@
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="about.html">About me</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>	
+			
+		</div>
+	</nav>
+		
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button id="searchclose" type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<input id="searchin" type="text" placeholder="Search" class="searchinput" value=""; autofocus></input>
+				</div>
+			</div>
+		</div>
+	</div>			
+			   	
+	<div class="container">
+		<div class="top">
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				 </ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active ad1"></div>
+					<div class="item ad2"></div>
+					<div class="item ad3"> </div>
+					<div class="item ad4"> </div>
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="slidearrow-left glyphicon glyphicon-menu-left" href="#myCarousel" data-slide="prev">
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="slidearrow-right glyphicon glyphicon-menu-right" href="#myCarousel" data-slide="next">
+				<span class="sr-only">Next</span>
+				</a>
+	
+			</div>
+		</div>
+		
+		<div class="menu">
+			<ul>
+				<li><span>Architecture</span></li>
+				<li><a href="#">Modern  </a></li>
+				<li><a href="#">Classic  </a></li>
+				<li><a href="#">Recently added</a></li>
+			</ul>
+		</div>
+	</div>
+		   
+	<div class="container">
+		<div id="blog-page">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-12 blog-main">
+					<div class="masonry">				
+							
+							<div class="example2">
+								<div class="inner-example">
+									<a href="blog.html"><img src="images/pellergino.jpg" alt="pellegrino"></a>
+									<h3>Bjarke Ingels Pellergino concept</h3>
+									<p>BIG Bjarke Ingels Group has beaten proposals from firms including snohetta and MVRDV in an international competition to build the San Pellegrino flagship factory in northern Italy.
+									</p>
+								</div>
+									<div class="button-wrapper">
+										<a id="buttonMove" href="blog.html" type="button" class="btn btn-danger right">MORE
+											<div class="box">&rsaquo;</div>
+										</a>										
+									</div> 
+							</div> 							
+							
+							<div class="example2">
+								<div class="inner-example">
+										<a href="blog2.html"><img src="images/steam.jpg" alt="portfolio1"></a>
+									<h3>Power plant and ski slope turns science fiction into fact</h3>
+									<p>The design of the steam ring generator itself is rather unique. BIG have teamed with rocket scientists and combustion engineers to design and build working prototype.
+									</p>
+								</div>
+									<div class="button-wrapper">
+										<a id="buttonMove2" href="blog2.html" type="button" class="btn btn-danger right">MORE
+											<div class="box2">&rsaquo;</div>
+										</a>
+									</div> 
+							</div> 
+					
+							<div class="example2">
+								<div class="inner-example">
+									<a href="blog3.html"><img src="images/portfolio1.jpg" alt="portfolio1"></a>
+									<h3>The cylinder house nestles between the forests near Lyon</h3>
+									<p>Named ‘the cylinder house’ by Cyril Lancelin of town and concrete; the imagined dwelling is characterized by a single shape that has been repeated to form the structure: a cylinder.
+									</p>
+								</div>								
+								<div class="button-wrapper">
+									<a id="buttonMove3" href="blog3.html" type="button" class="btn btn-danger right">MORE
+										<div class="box3">&rsaquo;</div>
+									</a>
+								</div>
+							</div> 
+
+						<div class="example2">
+							<div class="inner-example">
+								<a href="blog2.html"><img src="images/eclodz.jpg" alt="portfolio1"></a>
+								<h3>Post-industrial architecture in Lodz</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							</div>
+							<div class="button-wrapper">
+								<a id="buttonMove4" href="blog4.html" href="blog4.html" type="button" class="btn btn-danger right">MORE
+									<div class="box4">&rsaquo;</div>
+								</a>
+							</div>
+						</div> 
+					</div> 
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12 blog-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+							<h3>About me</h3>
+							<div class="image-wrapper">
+							<a href="about.html"><img src="images/rinko.jpg" alt="about me"></a>
+							</div>
+							<p>Hi! Welcome to my blog. I am fascinated by achievements of great minds of architecture and I would like to share my fascination with you. </p>
+						<form>
+							<div class="form-group">
+								<a href="about.html" type="button" class="btn btn-danger">Find out more!</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-4 col-xs-12 blog-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+							<h3>More architecture</h3>
+							<p>Do you want to <em>find more</em> about architecture? Just sing up for my newsletter and you will get all new posts on your mail.</p>
+						<form>
+							<div class="form-group">
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							</div>
+							<a href="#" type="button" class="btn btn-danger">Sign up!</button></a>
+						</form>
+					</div>
+					<div id="post-box2" class="sidebar-module">
+						<h3>Blog archive</h3>
+						<ol>
+							<li><a href="#">April /1/</a></li>
+							<li><a href="#">March /3/</a></li>
+							<li><a href="#">Februrary /6/</a></li>
+							<li><a href="#">January /2/</a></li>
+						</ol>
+					</div>
+				</div>
+				
+			</div>
 		</div>
 	</div>	
-	
 	
 		<div class="container">
 			<h1 id="hello">Hello</h1>
@@ -22,12 +213,26 @@
 				</p>
 				</form>		
 		</div>
-		
 	
 	<div id="back-to-top">
 		<a type="button" class="backtop">&uarr;</a>
 	</div>
-@ -225,6 +238,7 @@
+	
+  <footer class="blog-footer">
+	  <div id="social-media">
+			<p>&#169; 2018 Rinko Tamaguchi. Any questrions? Please share them with me at <a href="mailto:architecture@blog.com" target="_blank">architecture@blog.com</a></br>Join me also on social media.</p>
+				<div class="wrapper">
+					<ul class="social-icons icon-circle list-unstyled list-inline"> 
+						<li> <a href="#"><i class="fa fa-facebook"></i></a></li> 
+						<li> <a href="#"><i class="fa fa-google-plus"></i></a></li> 
+						<li> <a href="#"><i class="fa fa-pinterest"></i></a></li> 
+						<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</div>
+		</div>	
+	</footer>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 	<script src="js/transformJQ.js"></script>
 	<script src="js/customjs.js"></script>
