@@ -119,7 +119,7 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
     
     $("#back-to-top").click(function() {
         $('html, body').animate({
-            scrollTop: $("#navbar").offset().top
+            scrollTop: $("#navbar2").offset().top - 100
         }, 400);
     });
 }

@@ -70,7 +70,7 @@ window.addEventListener("scroll", function(event) {
 
 $("#back-to-top").click(function() {
     $('html, body').animate({
-        scrollTop: $("#navbar").offset().top
+        scrollTop: $("#navbar2").offset().top
     }, 400);
 });
 

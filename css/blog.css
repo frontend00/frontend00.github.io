@@ -34,12 +34,17 @@ strong::selection {
 strong::-moz-selection {
 		background:  #ffec85; }
 
-p::selection {
+ p::selection {
 		background:  #ffec85;}
 	
 p::-moz-selection {
 		background:  #ffec85; }
 
+h3::selection {
+		background:  #ffec85;}
+	
+h3::-moz-selection {
+		background:  #ffec85; }
 
 /* Override Bootstrap's default container. */
 @media (min-width: 1200px) {
