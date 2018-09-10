@@ -32,65 +32,6 @@ closeSearch.addEventListener('click', clearForms, false);
 window.addEventListener('beforeunload', clearForms, false);
 
 
-/* ---- arrows in buttons ---- */
-
-function moveArrow() {
-$('.box').transition({ x: '10px' }, 200, 'in');
-$('.box').css('color', 'white');
-}
-
-function moveArrowback() {
-$('.box').transition({ x: '0px' }, 200, 'in');
-$('.box').css('color', '#d43f3a');
-}
-
-function moveArrow2() {
-$('.box2').transition({ x: '10px' }, 200, 'in');
-$('.box2').css('color', 'white');
-}
-
-function moveArrowback2() {
-$('.box2').transition({ x: '0px' }, 200, 'in');
-$('.box2').css('color', '#d43f3a');
-}
-
-function moveArrow3() {
-$('.box3').transition({ x: '10px' }, 200, 'in');
-$('.box3').css('color', 'white');
-}
-
-function moveArrowback3() {
-$('.box3').transition({ x: '0px' }, 200, 'in');
-$('.box3').css('color', '#d43f3a');
-}
-
-function moveArrow4() {
-$('.box4').transition({ x: '10px' }, 200, 'in');
-$('.box4').css('color', 'white');
-}
-
-function moveArrowback4() {
-$('.box4').transition({ x: '0px' }, 200, 'in');
-$('.box4').css('color', '#d43f3a');
-}
-
-
-var getButton = document.getElementById('buttonMove');
-getButton.addEventListener('mouseenter', moveArrow, false);
-getButton.addEventListener('mouseleave', moveArrowback, false);
-
-var getButton2 = document.getElementById('buttonMove2');
-getButton2.addEventListener('mouseenter', moveArrow2, false);
-getButton2.addEventListener('mouseleave', moveArrowback2, false);
-
-var getButton3 = document.getElementById('buttonMove3');
-getButton3.addEventListener('mouseenter', moveArrow3, false);
-getButton3.addEventListener('mouseleave', moveArrowback3, false);										
-var getButton4 = document.getElementById('buttonMove4');
-getButton4.addEventListener('mouseenter', moveArrow4, false);
-getButton4.addEventListener('mouseleave', moveArrowback4, false);
-
-
 /* ---- autofocus on modal ---- */
 
 $('.modal').on('shown.bs.modal', function() {
@@ -128,8 +69,6 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
 
 var theToggle = document.getElementById('toggle');
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
 
 // hasClass
 function hasClass(elem, className) {
