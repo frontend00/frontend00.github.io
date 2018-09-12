@@ -65,10 +65,9 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
     });
 }
 
-/* ---- toggle ---- */
+/* ---- toggle close button ---- */
 
 var theToggle = document.getElementById('toggle');
-
 
 // hasClass
 function hasClass(elem, className) {
@@ -107,3 +106,21 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
+// load content JQuery - navbar
+
+$('.nav a').on('click', function(e) {
+	e.preventDefault();
+    let url = this.href;   
+    
+    $('.nav a').removeClass('colorthis');
+	$('.nav li').removeClass('active');
+	$(this).closest('li').addClass('active');
+    $(this).addClass('colorthis');
+
+    $('.top').remove();
+	$('#container').remove();
+	$('#content').load(url + ' #content').hide().fadeIn('slow');
+
+});
+
